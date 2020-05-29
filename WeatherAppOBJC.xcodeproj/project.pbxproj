@@ -15,6 +15,13 @@
 		1F46C0A1247FB42F00E716D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F46C0A0247FB42F00E716D7 /* Assets.xcassets */; };
 		1F46C0A4247FB42F00E716D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F46C0A2247FB42F00E716D7 /* LaunchScreen.storyboard */; };
 		1F46C0A7247FB42F00E716D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0A6247FB42F00E716D7 /* main.m */; };
+		1F46C0B624801A9500E716D7 /* ForecastData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0B524801A9500E716D7 /* ForecastData.m */; };
+		1F46C0BA2480452300E716D7 /* ForecastInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0B92480452300E716D7 /* ForecastInfoData.m */; };
+		1F46C0BD2480454000E716D7 /* WeatherInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0BC2480454000E716D7 /* WeatherInfoData.m */; };
+		1F46C0C02480455400E716D7 /* WindInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0BF2480455400E716D7 /* WindInfoData.m */; };
+		1F46C0C32480457400E716D7 /* TimeOfDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0C22480457400E716D7 /* TimeOfDay.m */; };
+		1F46C0C6248155FF00E716D7 /* WeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0C5248155FF00E716D7 /* WeatherData.m */; };
+		1F46C0C92481561400E716D7 /* CityData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0C82481561400E716D7 /* CityData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +38,20 @@
 		1F46C0A3247FB42F00E716D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F46C0A5247FB42F00E716D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F46C0A6247FB42F00E716D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F46C0B424801A9500E716D7 /* ForecastData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForecastData.h; sourceTree = "<group>"; };
+		1F46C0B524801A9500E716D7 /* ForecastData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForecastData.m; sourceTree = "<group>"; };
+		1F46C0B82480452300E716D7 /* ForecastInfoData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForecastInfoData.h; sourceTree = "<group>"; };
+		1F46C0B92480452300E716D7 /* ForecastInfoData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForecastInfoData.m; sourceTree = "<group>"; };
+		1F46C0BB2480454000E716D7 /* WeatherInfoData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherInfoData.h; sourceTree = "<group>"; };
+		1F46C0BC2480454000E716D7 /* WeatherInfoData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherInfoData.m; sourceTree = "<group>"; };
+		1F46C0BE2480455400E716D7 /* WindInfoData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindInfoData.h; sourceTree = "<group>"; };
+		1F46C0BF2480455400E716D7 /* WindInfoData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindInfoData.m; sourceTree = "<group>"; };
+		1F46C0C12480457400E716D7 /* TimeOfDay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeOfDay.h; sourceTree = "<group>"; };
+		1F46C0C22480457400E716D7 /* TimeOfDay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeOfDay.m; sourceTree = "<group>"; };
+		1F46C0C4248155FF00E716D7 /* WeatherData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherData.h; sourceTree = "<group>"; };
+		1F46C0C5248155FF00E716D7 /* WeatherData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherData.m; sourceTree = "<group>"; };
+		1F46C0C72481561400E716D7 /* CityData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityData.h; sourceTree = "<group>"; };
+		1F46C0C82481561400E716D7 /* CityData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +84,7 @@
 		1F46C090247FB42C00E716D7 /* WeatherAppOBJC */ = {
 			isa = PBXGroup;
 			children = (
+				1F46C0AD247FB59000E716D7 /* Models */,
 				1F46C091247FB42C00E716D7 /* AppDelegate.h */,
 				1F46C092247FB42C00E716D7 /* AppDelegate.m */,
 				1F46C094247FB42C00E716D7 /* SceneDelegate.h */,
@@ -77,6 +99,51 @@
 				1F46C09D247FB42D00E716D7 /* WeatherAppOBJC.xcdatamodeld */,
 			);
 			path = WeatherAppOBJC;
+			sourceTree = "<group>";
+		};
+		1F46C0AD247FB59000E716D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F46C0AE247FB5A300E716D7 /* API */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F46C0AE247FB5A300E716D7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1F46C0AF247FB5AE00E716D7 /* Forecast */,
+				1F46C0C4248155FF00E716D7 /* WeatherData.h */,
+				1F46C0C5248155FF00E716D7 /* WeatherData.m */,
+				1F46C0C72481561400E716D7 /* CityData.h */,
+				1F46C0C82481561400E716D7 /* CityData.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1F46C0AF247FB5AE00E716D7 /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				1F46C0B72480450700E716D7 /* Info */,
+				1F46C0B424801A9500E716D7 /* ForecastData.h */,
+				1F46C0B524801A9500E716D7 /* ForecastData.m */,
+			);
+			path = Forecast;
+			sourceTree = "<group>";
+		};
+		1F46C0B72480450700E716D7 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				1F46C0B82480452300E716D7 /* ForecastInfoData.h */,
+				1F46C0B92480452300E716D7 /* ForecastInfoData.m */,
+				1F46C0BB2480454000E716D7 /* WeatherInfoData.h */,
+				1F46C0BC2480454000E716D7 /* WeatherInfoData.m */,
+				1F46C0BE2480455400E716D7 /* WindInfoData.h */,
+				1F46C0BF2480455400E716D7 /* WindInfoData.m */,
+				1F46C0C12480457400E716D7 /* TimeOfDay.h */,
+				1F46C0C22480457400E716D7 /* TimeOfDay.m */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,11 +216,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F46C0C32480457400E716D7 /* TimeOfDay.m in Sources */,
+				1F46C0B624801A9500E716D7 /* ForecastData.m in Sources */,
+				1F46C0BA2480452300E716D7 /* ForecastInfoData.m in Sources */,
+				1F46C0C6248155FF00E716D7 /* WeatherData.m in Sources */,
+				1F46C0C92481561400E716D7 /* CityData.m in Sources */,
+				1F46C0BD2480454000E716D7 /* WeatherInfoData.m in Sources */,
 				1F46C0A7247FB42F00E716D7 /* main.m in Sources */,
 				1F46C099247FB42D00E716D7 /* ViewController.m in Sources */,
 				1F46C093247FB42C00E716D7 /* AppDelegate.m in Sources */,
 				1F46C09F247FB42D00E716D7 /* WeatherAppOBJC.xcdatamodeld in Sources */,
 				1F46C096247FB42C00E716D7 /* SceneDelegate.m in Sources */,
+				1F46C0C02480455400E716D7 /* WindInfoData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
