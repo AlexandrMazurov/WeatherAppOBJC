@@ -24,7 +24,10 @@ WeatherParser *weatherParser;
 -(void)getWeatherForecastWithLat: (NSString*)lat lon:(NSString*)lon
                        onSuccess: (SuccessCompletionBlock)successBlock
                        onFailure: (FailureCompletionBlock)failureBlock {
-    NSString *urlString = [NSString stringWithFormat:@"", lat, lon];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"OWMAPI" ofType:@"plist"];
+    NSDictionary *plistData = [NSDictionary dictionaryWithContentsOfFile:filePath];
+    NSString *key = plistData[@"key"];
+    NSString *urlString = [NSString stringWithFormat:@"https://api.openweathermap.org/data/2.5/forecast?lat=%@&lon=%@&APPID=%@", lat, lon, key];
     NSURL *url = [NSURL URLWithString: urlString];
     [[NSURLSession.sharedSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data,
                                                                          NSURLResponse * _Nullable response,

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F373A882482E0EC000794DE /* OWMAPI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F373A872482E0EC000794DE /* OWMAPI.plist */; };
 		1F46C093247FB42C00E716D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C092247FB42C00E716D7 /* AppDelegate.m */; };
 		1F46C096247FB42C00E716D7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C095247FB42C00E716D7 /* SceneDelegate.m */; };
 		1F46C099247FB42D00E716D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C098247FB42C00E716D7 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F373A872482E0EC000794DE /* OWMAPI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OWMAPI.plist; sourceTree = "<group>"; };
 		1F46C08E247FB42C00E716D7 /* WeatherAppOBJC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppOBJC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F46C091247FB42C00E716D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F46C092247FB42C00E716D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		1F46C090247FB42C00E716D7 /* WeatherAppOBJC */ = {
 			isa = PBXGroup;
 			children = (
+				1F373A872482E0EC000794DE /* OWMAPI.plist */,
 				1F46C0CA2481895800E716D7 /* API */,
 				1F46C0AD247FB59000E716D7 /* Models */,
 				1F46C091247FB42C00E716D7 /* AppDelegate.h */,
@@ -240,6 +243,7 @@
 				1F46C0A4247FB42F00E716D7 /* LaunchScreen.storyboard in Resources */,
 				1F46C0A1247FB42F00E716D7 /* Assets.xcassets in Resources */,
 				1F46C09C247FB42D00E716D7 /* Main.storyboard in Resources */,
+				1F373A882482E0EC000794DE /* OWMAPI.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
