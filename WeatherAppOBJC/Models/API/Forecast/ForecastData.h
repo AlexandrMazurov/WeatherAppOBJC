@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property int time;
 @property ForecastInfoData *main;
-@property NSArray<WeatherInfoData *> *weather;
+@property NSMutableArray<WeatherInfoData *> *weather;
 @property WindInfoData *wind;
 @property TimeOfDay *timeOfDay;
 

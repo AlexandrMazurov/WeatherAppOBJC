@@ -12,7 +12,7 @@
 
 -(id) initWithTime: (int)time
               main: (ForecastInfoData*)main
-           weather: (NSArray<WeatherInfoData*>*)weather
+           weather: (NSMutableArray<WeatherInfoData*>*)weather
               wind: (WindInfoData*)wind
          timeOfDay: (TimeOfDay*)timeOfDay {
     self = [super init];

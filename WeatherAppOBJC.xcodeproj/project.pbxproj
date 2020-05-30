@@ -22,6 +22,8 @@
 		1F46C0C32480457400E716D7 /* TimeOfDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0C22480457400E716D7 /* TimeOfDay.m */; };
 		1F46C0C6248155FF00E716D7 /* WeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0C5248155FF00E716D7 /* WeatherData.m */; };
 		1F46C0C92481561400E716D7 /* CityData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0C82481561400E716D7 /* CityData.m */; };
+		1F46C0CE248189B200E716D7 /* OWMAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0CD248189B200E716D7 /* OWMAPI.m */; };
+		1F46C0D22482D98C00E716D7 /* WeatherParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C0D12482D98C00E716D7 /* WeatherParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,10 @@
 		1F46C0C5248155FF00E716D7 /* WeatherData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherData.m; sourceTree = "<group>"; };
 		1F46C0C72481561400E716D7 /* CityData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityData.h; sourceTree = "<group>"; };
 		1F46C0C82481561400E716D7 /* CityData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityData.m; sourceTree = "<group>"; };
+		1F46C0CC248189B200E716D7 /* OWMAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWMAPI.h; sourceTree = "<group>"; };
+		1F46C0CD248189B200E716D7 /* OWMAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWMAPI.m; sourceTree = "<group>"; };
+		1F46C0D02482D98C00E716D7 /* WeatherParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherParser.h; sourceTree = "<group>"; };
+		1F46C0D12482D98C00E716D7 /* WeatherParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 		1F46C090247FB42C00E716D7 /* WeatherAppOBJC */ = {
 			isa = PBXGroup;
 			children = (
+				1F46C0CA2481895800E716D7 /* API */,
 				1F46C0AD247FB59000E716D7 /* Models */,
 				1F46C091247FB42C00E716D7 /* AppDelegate.h */,
 				1F46C092247FB42C00E716D7 /* AppDelegate.m */,
@@ -144,6 +151,33 @@
 				1F46C0C22480457400E716D7 /* TimeOfDay.m */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		1F46C0CA2481895800E716D7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1F46C0CF2482D97200E716D7 /* Parser */,
+				1F46C0CB2481896300E716D7 /* URLEndpoint */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1F46C0CB2481896300E716D7 /* URLEndpoint */ = {
+			isa = PBXGroup;
+			children = (
+				1F46C0CC248189B200E716D7 /* OWMAPI.h */,
+				1F46C0CD248189B200E716D7 /* OWMAPI.m */,
+			);
+			path = URLEndpoint;
+			sourceTree = "<group>";
+		};
+		1F46C0CF2482D97200E716D7 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				1F46C0D02482D98C00E716D7 /* WeatherParser.h */,
+				1F46C0D12482D98C00E716D7 /* WeatherParser.m */,
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F46C0C32480457400E716D7 /* TimeOfDay.m in Sources */,
+				1F46C0D22482D98C00E716D7 /* WeatherParser.m in Sources */,
 				1F46C0B624801A9500E716D7 /* ForecastData.m in Sources */,
 				1F46C0BA2480452300E716D7 /* ForecastInfoData.m in Sources */,
 				1F46C0C6248155FF00E716D7 /* WeatherData.m in Sources */,
@@ -226,6 +261,7 @@
 				1F46C099247FB42D00E716D7 /* ViewController.m in Sources */,
 				1F46C093247FB42C00E716D7 /* AppDelegate.m in Sources */,
 				1F46C09F247FB42D00E716D7 /* WeatherAppOBJC.xcdatamodeld in Sources */,
+				1F46C0CE248189B200E716D7 /* OWMAPI.m in Sources */,
 				1F46C096247FB42C00E716D7 /* SceneDelegate.m in Sources */,
 				1F46C0C02480455400E716D7 /* WindInfoData.m in Sources */,
 			);

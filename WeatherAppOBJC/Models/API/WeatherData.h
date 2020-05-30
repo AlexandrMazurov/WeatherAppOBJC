@@ -14,10 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WeatherData : NSObject
 
-@property NSArray<ForecastData *> *list;
+@property NSMutableArray<ForecastData *> *list;
 @property CityData *city;
 
--(id) initWithList: (NSArray<ForecastData *>*)list cityData: (CityData*)cityData;
+-(id) initWithList: (NSMutableArray<ForecastData *>*)list cityData: (CityData*)cityData;
 
 @end
 

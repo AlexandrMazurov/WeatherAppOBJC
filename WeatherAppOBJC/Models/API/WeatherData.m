@@ -10,7 +10,7 @@
 
 @implementation WeatherData
 
--(id) initWithList: (NSArray<ForecastData *>*)list cityData: (CityData*)cityData {
+-(id) initWithList: (NSMutableArray<ForecastData *>*)list cityData: (CityData*)cityData {
     self = [super init];
     if (self) {
         self.list = list;
