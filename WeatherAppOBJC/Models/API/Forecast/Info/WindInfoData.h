@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property double speed;
 @property int deg;
 
+-(id) initWithSpeed: (double)speed deg: (int)deg;
+
 @end
 
 NS_ASSUME_NONNULL_END

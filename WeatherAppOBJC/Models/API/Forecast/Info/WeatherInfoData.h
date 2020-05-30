@@ -14,7 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString *mainInfo;
 @property NSString *mainDescription;
-@property NSString *icon;
+@property NSString *iconName;
+
+-(id) initWithInfo: (NSString*)info description: (NSString*)description iconName: (NSString*)iconName;
 
 @end
 

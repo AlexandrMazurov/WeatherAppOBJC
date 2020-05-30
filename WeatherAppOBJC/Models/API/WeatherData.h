@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSArray<ForecastData *> *list;
 @property CityData *city;
 
+-(id) initWithList: (NSArray<ForecastData *>*)list cityData: (CityData*)cityData;
+
 @end
 
 NS_ASSUME_NONNULL_END

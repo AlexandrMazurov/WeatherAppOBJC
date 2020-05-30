@@ -10,4 +10,22 @@
 
 @implementation ForecastInfoData
 
+-(id) initWithTemperature: (double)temperature
+                  minTemp: (double)minTemp
+                  maxTemp: (double)maxTemp
+                feelsLike: (double)feelsLike
+                 pressure: (int)pressure
+                 humidity: (int)humidity {
+    self = [super init];
+    if (self) {
+        self.temperature = temperature;
+        self.minTemperature = minTemp;
+        self.maxTemperature = maxTemp;
+        self.feelsLike = feelsLike;
+        self.pressure = pressure;
+        self.humidity = humidity;
+    }
+    return self;
+}
+
 @end

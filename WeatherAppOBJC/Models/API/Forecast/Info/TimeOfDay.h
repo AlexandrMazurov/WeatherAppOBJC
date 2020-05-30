@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString *pod;
 
+-(id) initWithPod: (NSString*)pod;
+
 @end
 
 NS_ASSUME_NONNULL_END

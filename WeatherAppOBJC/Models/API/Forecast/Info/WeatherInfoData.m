@@ -10,4 +10,14 @@
 
 @implementation WeatherInfoData
 
+-(id) initWithInfo: (NSString*)info description: (NSString*)description iconName: (NSString*)iconName {
+    self = [super init];
+    if (self) {
+        self.mainInfo = info;
+        self.mainDescription = description;
+        self.iconName = iconName;
+    }
+    return self;
+}
+
 @end

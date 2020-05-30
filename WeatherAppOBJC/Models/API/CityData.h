@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property int sunRise;
 @property int sunSet;
 
+- (id)initWithName: (NSString*)name sunRise: (int)sunRise sunSet: (int)sunSet;
+
 @end
 
 NS_ASSUME_NONNULL_END

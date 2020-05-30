@@ -10,4 +10,13 @@
 
 @implementation WindInfoData
 
+-(id) initWithSpeed: (double)speed deg: (int)deg {
+    self = [super init];
+    if (self) {
+        self.speed = speed;
+        self.deg = deg;
+    }
+    return self;
+}
+
 @end

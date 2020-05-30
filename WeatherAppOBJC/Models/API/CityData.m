@@ -10,4 +10,14 @@
 
 @implementation CityData
 
+- (id)initWithName: (NSString*)name sunRise: (int)sunRise sunSet: (int)sunSet {
+    self = [super init];
+    if (self) {
+        self.name = name;
+        self.sunRise = sunRise;
+        self.sunSet = sunSet;
+    }
+    return self;
+}
+
 @end

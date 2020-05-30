@@ -19,6 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property int pressure;
 @property int humidity;
 
+-(id) initWithTemperature: (double)temperature
+                  minTemp: (double)minTemp
+                  maxTemp: (double)maxTemp
+                feelsLike: (double)feelsLike
+                 pressure: (int)pressure
+                 humidity: (int)humidity;
+
 @end
 
 NS_ASSUME_NONNULL_END

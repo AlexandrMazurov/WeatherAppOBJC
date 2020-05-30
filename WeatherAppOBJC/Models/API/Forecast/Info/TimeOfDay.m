@@ -10,4 +10,12 @@
 
 @implementation TimeOfDay
 
+-(id) initWithPod: (NSString*)pod {
+    self = [super init];
+    if (self) {
+        self.pod = pod;
+    }
+    return self;
+}
+
 @end
