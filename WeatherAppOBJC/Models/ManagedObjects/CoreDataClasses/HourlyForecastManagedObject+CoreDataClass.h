@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HourlyForecastManagedObject : NSManagedObject
 
+-(id) initWithTime: (int64_t)time degree: (int64_t)degree imageName: (NSString*)imageName;
+
 @end
 
 NS_ASSUME_NONNULL_END

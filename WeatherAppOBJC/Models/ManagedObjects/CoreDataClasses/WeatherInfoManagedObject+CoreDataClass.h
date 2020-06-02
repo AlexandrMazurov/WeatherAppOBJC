@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WeatherInfoManagedObject : NSManagedObject
 
+-(id) initWithName: (NSString*)name value: (NSString*)value;
+
 @end
 
 NS_ASSUME_NONNULL_END

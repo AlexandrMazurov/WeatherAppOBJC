@@ -11,4 +11,13 @@
 
 @implementation WeatherInfoManagedObject
 
+-(id) initWithName: (NSString*)name value: (NSString*)value {
+    self = [super init];
+    if (self) {
+        self.name = name;
+        self.value = value;
+    }
+    return  self;
+}
+
 @end

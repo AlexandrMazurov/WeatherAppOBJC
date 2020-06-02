@@ -22,7 +22,7 @@ WeatherParser *weatherParser;
 }
 
 -(void)getWeatherForecastWithLat: (NSString*)lat lon:(NSString*)lon
-                       onSuccess: (SuccessCompletionBlock)successBlock
+                       onSuccess: (SuccessWeatherDataCompletionBlock)successBlock
                        onFailure: (FailureCompletionBlock)failureBlock {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"OWMAPI" ofType:@"plist"];
     NSDictionary *plistData = [NSDictionary dictionaryWithContentsOfFile:filePath];

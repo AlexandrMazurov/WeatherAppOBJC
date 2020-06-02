@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^_Nullable SuccessCompletionBlock)(id responseObject);
+typedef void (^_Nullable SuccessWeatherDataCompletionBlock)(WeatherData *responseObject);
 typedef void (^_Nullable FailureCompletionBlock)(NSError *error);
 
 @interface OWMAPI : NSObject
@@ -19,7 +19,7 @@ typedef void (^_Nullable FailureCompletionBlock)(NSError *error);
 -(id) initWithParser: (WeatherParser*)parser;
 
 -(void)getWeatherForecastWithLat: (NSString*)lat lon:(NSString*)lon
-                       onSuccess: (SuccessCompletionBlock)successBlock
+                       onSuccess: (SuccessWeatherDataCompletionBlock)successBlock
                        onFailure: (FailureCompletionBlock)failureBlock;
 
 @end

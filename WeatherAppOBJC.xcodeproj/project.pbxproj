@@ -16,6 +16,7 @@
 		1F373A9F2482E6BB000794DE /* HourlyForecastManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F373A952482E6BB000794DE /* HourlyForecastManagedObject+CoreDataProperties.m */; };
 		1F373AA02482E6BB000794DE /* WeatherInfoManagedObject+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F373A982482E6BB000794DE /* WeatherInfoManagedObject+CoreDataClass.m */; };
 		1F373AA12482E6BB000794DE /* WeatherInfoManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F373A992482E6BB000794DE /* WeatherInfoManagedObject+CoreDataProperties.m */; };
+		1F3F03322485850F00AAED37 /* WeatherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F03312485850F00AAED37 /* WeatherManager.m */; };
 		1F46C093247FB42C00E716D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C092247FB42C00E716D7 /* AppDelegate.m */; };
 		1F46C096247FB42C00E716D7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C095247FB42C00E716D7 /* SceneDelegate.m */; };
 		1F46C099247FB42D00E716D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C098247FB42C00E716D7 /* ViewController.m */; };
@@ -53,6 +54,8 @@
 		1F373A972482E6BB000794DE /* WeatherInfoManagedObject+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeatherInfoManagedObject+CoreDataClass.h"; sourceTree = "<group>"; };
 		1F373A982482E6BB000794DE /* WeatherInfoManagedObject+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WeatherInfoManagedObject+CoreDataClass.m"; sourceTree = "<group>"; };
 		1F373A992482E6BB000794DE /* WeatherInfoManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WeatherInfoManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1F3F03302485850F00AAED37 /* WeatherManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherManager.h; sourceTree = "<group>"; };
+		1F3F03312485850F00AAED37 /* WeatherManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherManager.m; sourceTree = "<group>"; };
 		1F46C08E247FB42C00E716D7 /* WeatherAppOBJC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppOBJC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F46C091247FB42C00E716D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F46C092247FB42C00E716D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,6 +139,23 @@
 			path = CoreDataClasses;
 			sourceTree = "<group>";
 		};
+		1F3F032E248584D400AAED37 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F3F032F248584F000AAED37 /* WeatherManager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1F3F032F248584F000AAED37 /* WeatherManager */ = {
+			isa = PBXGroup;
+			children = (
+				1F3F03302485850F00AAED37 /* WeatherManager.h */,
+				1F3F03312485850F00AAED37 /* WeatherManager.m */,
+			);
+			path = WeatherManager;
+			sourceTree = "<group>";
+		};
 		1F46C085247FB42C00E716D7 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +178,7 @@
 				1F373A872482E0EC000794DE /* OWMAPI.plist */,
 				1F46C0CA2481895800E716D7 /* API */,
 				1F46C0AD247FB59000E716D7 /* Models */,
+				1F3F032E248584D400AAED37 /* Services */,
 				1F46C091247FB42C00E716D7 /* AppDelegate.h */,
 				1F46C092247FB42C00E716D7 /* AppDelegate.m */,
 				1F46C094247FB42C00E716D7 /* SceneDelegate.h */,
@@ -336,6 +357,7 @@
 				1F46C09F247FB42D00E716D7 /* WeatherAppOBJC.xcdatamodeld in Sources */,
 				1F46C0CE248189B200E716D7 /* OWMAPI.m in Sources */,
 				1F46C096247FB42C00E716D7 /* SceneDelegate.m in Sources */,
+				1F3F03322485850F00AAED37 /* WeatherManager.m in Sources */,
 				1F373A9D2482E6BB000794DE /* WeatherManagedObject+CoreDataProperties.m in Sources */,
 				1F46C0C02480455400E716D7 /* WindInfoData.m in Sources */,
 				1F373A9C2482E6BB000794DE /* WeatherManagedObject+CoreDataClass.m in Sources */,

@@ -11,4 +11,18 @@
 
 @implementation WeakForecastManagedObject
 
+-(id) initWithDayName: (NSString*)dayName
+            dayDegree: (int16_t)dayDegree
+          nightDegree: (int16_t)nightdegree
+            imageName: (NSString*)imageName {
+    self = [super init];
+    if (self) {
+        self.dayName = dayName;
+        self.dayDegree = dayDegree;
+        self.nightDegree = nightdegree;
+        self.imageName = imageName;
+    }
+    return self;
+}
+
 @end

@@ -16,6 +16,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WeatherManagedObject : NSManagedObject
 
+-(id) initWithCityName: (NSString*)cityName
+                degree: (int64_t)degree
+             situation: (NSString*)situation
+        hourlyForecast: (NSArray<HourlyForecastManagedObject *> *)hourlyForecast
+          weakForecast: (NSArray<WeakForecastManagedObject *> *)weakForecast
+           weatherInfo: (NSArray<WeatherInfoManagedObject *> *)weatherInfo
+     isCurrentLocation: (BOOL)isCurrentLocation;
+
 @end
 
 NS_ASSUME_NONNULL_END

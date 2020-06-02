@@ -16,6 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WeakForecastManagedObject : NSManagedObject
 
+-(id) initWithDayName: (NSString*)dayName
+            dayDegree: (int16_t)dayDegree
+          nightDegree: (int16_t)nightdegree
+            imageName: (NSString*)imageName;
+
 @end
 
 NS_ASSUME_NONNULL_END
