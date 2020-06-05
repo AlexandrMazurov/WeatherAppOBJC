@@ -12,11 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HourlyForecastModel : NSObject
 
-@property int degree;
+@property NSString *degree;
 @property NSString *imageName;
-@property int time;
+@property NSString *time;
 
--(id) initWithDegree: (int)degree imageName: (NSString *)imageName time: (int)time;
+-(id) initWithDegree: (NSString *)degree imageName: (NSString *)imageName time: (NSString *)time;
 
 @end
 

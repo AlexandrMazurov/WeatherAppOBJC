@@ -10,9 +10,9 @@
 
 @implementation HourlyForecastModel
 
--(id) initWithDegree: (int)degree
+-(id) initWithDegree: (NSString *)degree
            imageName: (NSString *)imageName
-                time: (int)time {
+                time: (NSString *)time {
     self = [super init];
     if (self) {
         self.degree = degree;

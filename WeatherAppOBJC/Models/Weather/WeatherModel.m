@@ -12,7 +12,7 @@
 
 -(id) initWithCityName: (NSString *)cityName
              situation: (NSString *)situation
-                degree: (int)degree
+                degree: (NSString *)degree
      isCurrentLocation: (BOOL)isCurrentLocation
         hourlyForecast: (NSArray<HourlyForecastModel *> *)hourlyForecat
           weakForecast: (NSArray<WeakForecastModel *> *)weakForecat

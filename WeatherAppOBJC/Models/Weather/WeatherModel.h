@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString *cityName;
 @property NSString *situation;
-@property int degree;
+@property NSString *degree;
 @property BOOL isCurrentLocation;
 @property NSArray<HourlyForecastModel *> *hourlyForecast;
 @property NSArray<WeakForecastModel *> *weakForecast;
@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(id) initWithCityName: (NSString *)cityName
              situation: (NSString *)situation
-                degree: (int)degree
+                degree: (NSString *)degree
      isCurrentLocation: (BOOL)isCurrentLocation
         hourlyForecast: (NSArray<HourlyForecastModel *> *)hourlyForecat
           weakForecast: (NSArray<WeakForecastModel *> *)weakForecat

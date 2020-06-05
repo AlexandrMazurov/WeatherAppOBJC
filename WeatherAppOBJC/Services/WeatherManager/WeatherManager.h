@@ -8,16 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "OWMAPI.h"
-#import "WeatherInfoManagedObject+CoreDataProperties.h"
+#import "DateManager.h"
+#import "WeatherData.h"
+#import "WeatherModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^_Nullable SucessWeatherCompletionBlock)(WeatherManagedObject *weatherObject);
+typedef void (^_Nullable SucessWeatherCompletionBlock)(WeatherModel *weatherObject);
 typedef void (^_Nullable FailureCompletionBlock)(NSError *error);
 
 @interface WeatherManager : NSObject
 
--(id) initWithApi: (OWMAPI*)api;
+-(id) initWithApi: (OWMAPI*)api dateManager: (DateManager *)dateManager;
 
 -(void)getWeatherAtCurrentLocationOnSuccess: (SucessWeatherCompletionBlock)successBlock
                                   onFailure: (FailureCompletionBlock)failureBlock;
