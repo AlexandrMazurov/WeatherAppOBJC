@@ -16,9 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<HourlyForecastManagedObject *> *)fetchRequest;
 
-@property (nonatomic) int16_t degree;
+@property (nullable, nonatomic, copy) NSString *degree;
 @property (nullable, nonatomic, copy) NSString *imageName;
-@property (nonatomic) int16_t time;
+@property (nullable, nonatomic, copy) NSString *time;
 @property (nullable, nonatomic, retain) WeatherManagedObject *weather;
 
 @end

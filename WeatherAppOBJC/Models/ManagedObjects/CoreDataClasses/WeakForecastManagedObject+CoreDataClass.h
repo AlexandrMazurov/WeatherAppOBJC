@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "WeakForecastModel.h"
 
 @class WeatherManagedObject;
 
@@ -20,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
             dayDegree: (int16_t)dayDegree
           nightDegree: (int16_t)nightdegree
             imageName: (NSString*)imageName;
+
+-(id) initFromWeakForecastModel: (WeakForecastModel *)weakForecastModel withContext: (NSManagedObjectContext *)context;
 
 @end
 

@@ -20,4 +20,13 @@
     return  self;
 }
 
+-(id) initWithWeatherInfoModel: (WeatherInfoModel *)weatherInfo withContext: (NSManagedObjectContext *)context {
+    self = [super initWithContext:context];
+    if (self) {
+        self.name = weatherInfo.name;
+        self.value = weatherInfo.value;
+    }
+    return self;
+}
+
 @end

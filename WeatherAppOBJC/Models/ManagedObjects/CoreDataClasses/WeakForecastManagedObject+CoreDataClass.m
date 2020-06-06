@@ -25,4 +25,15 @@
     return self;
 }
 
+-(id) initFromWeakForecastModel: (WeakForecastModel *)weakForecastModel withContext: (NSManagedObjectContext *)context {
+    self = [super initWithContext:context];
+    if (self) {
+        self.dayName = weakForecastModel.dayName;
+        self.dayDegree = weakForecastModel.dayDegree;
+        self.nightDegree = weakForecastModel.nightDegree;
+        self.imageName = weakForecastModel.imageName;
+    }
+    return self;
+}
+
 @end

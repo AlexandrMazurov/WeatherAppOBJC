@@ -15,9 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WeatherManagedObject (CoreDataProperties)
 
 + (NSFetchRequest<WeatherManagedObject *> *)fetchRequest;
++ (NSFetchRequest<WeatherManagedObject *> *)fetchCurrentLocationWeatherRequest;
 
 @property (nullable, nonatomic, copy) NSString *cityName;
-@property (nonatomic) int16_t degree;
+@property (nullable, nonatomic, copy) NSString *degree;
 @property (nonatomic) BOOL isCurrentLocation;
 @property (nullable, nonatomic, copy) NSString *situation;
 @property (nullable, nonatomic, retain) NSOrderedSet<HourlyForecastManagedObject *> *hourlyForecast;

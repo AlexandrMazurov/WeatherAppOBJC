@@ -11,12 +11,22 @@
 
 @implementation HourlyForecastManagedObject
 
--(id) initWithTime: (int64_t)time degree: (int64_t)degree imageName: (NSString*)imageName {
+-(id) initWithTime: (NSString *)time degree: (NSString *)degree imageName: (NSString*)imageName {
     self = [super init];
     if (self) {
         self.time = time;
         self.degree = degree;
         self.imageName = imageName;
+    }
+    return self;
+}
+
+-(id) initWithHourlyForecastModel: (HourlyForecastModel *)hourlyForecastModel withContext: (NSManagedObjectContext *)context {
+    self = [super initWithContext:context];
+    if (self) {
+        self.time = hourlyForecastModel.time;
+        self.degree = hourlyForecastModel.degree;
+        self.imageName = hourlyForecastModel.imageName;
     }
     return self;
 }

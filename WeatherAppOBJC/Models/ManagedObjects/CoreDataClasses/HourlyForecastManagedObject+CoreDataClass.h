@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "HourlyForecastModel.h"
 
 @class WeatherManagedObject;
 
@@ -16,7 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HourlyForecastManagedObject : NSManagedObject
 
--(id) initWithTime: (int64_t)time degree: (int64_t)degree imageName: (NSString*)imageName;
+-(id) initWithTime: (NSString *)time degree: (NSString *)degree imageName: (NSString*)imageName;
+-(id) initWithHourlyForecastModel: (HourlyForecastModel *)hourlyForecastModel withContext: (NSManagedObjectContext *)context;
 
 @end
 

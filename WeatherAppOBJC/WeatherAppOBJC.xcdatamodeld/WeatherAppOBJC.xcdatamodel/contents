@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
     <entity name="HourlyForecastManagedObject" representedClassName="HourlyForecastManagedObject" syncable="YES">
-        <attribute name="degree" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="degree" attributeType="String"/>
         <attribute name="imageName" attributeType="String"/>
-        <attribute name="time" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="time" attributeType="String"/>
         <relationship name="weather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WeatherManagedObject" inverseName="hourlyForecast" inverseEntity="WeatherManagedObject"/>
     </entity>
     <entity name="WeakForecastManagedObject" representedClassName="WeakForecastManagedObject" syncable="YES">
@@ -20,7 +20,7 @@
     </entity>
     <entity name="WeatherManagedObject" representedClassName=".WeatherManagedObject" syncable="YES">
         <attribute name="cityName" attributeType="String"/>
-        <attribute name="degree" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="degree" attributeType="String"/>
         <attribute name="isCurrentLocation" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="situation" attributeType="String"/>
         <relationship name="hourlyForecast" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="HourlyForecastManagedObject" inverseName="weather" inverseEntity="HourlyForecastManagedObject"/>
