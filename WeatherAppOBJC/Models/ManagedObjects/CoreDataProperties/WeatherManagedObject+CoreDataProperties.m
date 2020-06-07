@@ -15,6 +15,13 @@
 	return [NSFetchRequest fetchRequestWithEntityName:@"WeatherManagedObject"];
 }
 
++ (NSFetchRequest<WeatherManagedObject *> *)fetchCurrentLocationWeatherRequest {
+    NSFetchRequest *currentLocationWeatherRequest = [NSFetchRequest<WeatherManagedObject *> fetchRequestWithEntityName:@"WeatherManagedObject"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isCurrentLocation == %d", true];
+    currentLocationWeatherRequest.predicate = predicate;
+    return currentLocationWeatherRequest;
+}
+
 @dynamic cityName;
 @dynamic degree;
 @dynamic isCurrentLocation;
