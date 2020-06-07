@@ -7,6 +7,7 @@
 //
 
 #import "HourlyForecastModel.h"
+#import "HourlyForecastManagedObject+CoreDataClass.h"
 
 @implementation HourlyForecastModel
 
@@ -18,6 +19,16 @@
         self.degree = degree;
         self.imageName = imageName;
         self.time = time;
+    }
+    return self;
+}
+
+- (id) initWithManagedObject: (HourlyForecastManagedObject *)hourlyForecastManagedObject {
+    self = [super init];
+    if (self) {
+        self.degree = hourlyForecastManagedObject.degree;
+        self.imageName = hourlyForecastManagedObject.imageName;
+        self.time = hourlyForecastManagedObject.time;
     }
     return self;
 }

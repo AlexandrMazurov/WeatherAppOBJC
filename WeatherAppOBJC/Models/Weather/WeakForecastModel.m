@@ -7,6 +7,7 @@
 //
 
 #import "WeakForecastModel.h"
+#import "WeakForecastManagedObject+CoreDataClass.h"
 
 @implementation WeakForecastModel
 
@@ -20,6 +21,17 @@
         self.imageName = imageName;
         self.dayDegree = dayDegree;
         self.nightDegree = nightDegree;
+    }
+    return self;
+}
+
+- (id) initWithManagedObject: (WeakForecastManagedObject *)weakForecastManagedObject {
+    self = [super init];
+    if (self) {
+        self.dayName = weakForecastManagedObject.dayName;
+        self.imageName = weakForecastManagedObject.imageName;
+        self.dayDegree = weakForecastManagedObject.dayDegree;
+        self.nightDegree = weakForecastManagedObject.nightDegree;
     }
     return self;
 }

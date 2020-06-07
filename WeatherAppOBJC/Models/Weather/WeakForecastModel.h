@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class WeakForecastManagedObject;
+
 @interface WeakForecastModel : NSObject
 
 @property NSString *dayName;
@@ -17,10 +19,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property int dayDegree;
 @property int nightDegree;
 
--(id) initWithDayName: (NSString *)dayName
-            imageName: (NSString *)imageName
-            dayDegree: (int)dayDegree
-          nightDegree: (int)nightDegree;
+- (id) initWithDayName: (NSString *)dayName
+             imageName: (NSString *)imageName
+             dayDegree: (int)dayDegree
+           nightDegree: (int)nightDegree;
+
+- (id) initWithManagedObject: (WeakForecastManagedObject *)weakForecastManagedObject;
 
 @end
 

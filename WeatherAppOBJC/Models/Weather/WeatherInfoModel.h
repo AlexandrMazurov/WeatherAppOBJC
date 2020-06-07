@@ -10,12 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class WeatherInfoManagedObject;
+
 @interface WeatherInfoModel : NSObject
 
 @property NSString *name;
 @property NSString *value;
 
--(id) initWithName: (NSString *)name value: (NSString *)value;
+- (id) initWithName: (NSString *)name value: (NSString *)value;
+- (id) initWithManagedObject: (WeatherInfoManagedObject *)weatherInfoManagedObject;
 
 @end
 
